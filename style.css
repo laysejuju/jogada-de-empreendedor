@@ -1,0 +1,177 @@
+﻿/* -----------------------------------------------------------------
+CSS by Layse Julyanne, Design by Ângela Oliveira & Supervision by Cleber Morais- version 1.0
+
+João Pessoa, PB - Brasil - 2015
+
+--------------------------------------------------------------------*/
+
+
+body{
+background-color:#c5c5c5;
+background-image: url('retina_wood.png');
+font-family: 'Poiret One', cursive;
+color: #1C252E;
+}
+
+header,nav,section,article,footer{
+margin:5px; 
+padding:8px;
+}
+
+footer{
+max-width:635px;
+margin: 0 auto;
+}
+
+nav ul li a{
+color: #E85B23;
+text-decoration: none;
+padding: 5px;
+}
+
+nav ul li a:hover{
+color: #698495;
+text-decoration: none;
+}
+
+span{
+font-size: 70pt;
+}
+
+#involucro{
+max-width:720px;
+height:920px;
+margin: 0 auto;
+background-color: #FFDD00;
+}
+
+/*header*/
+
+header h1{
+font-family: 'Luckiest Guy', cursive;
+color: #0B7A96;
+max-width: 381px;
+font-size:35pt;
+margin: 20px auto;
+text-align:center;
+}
+
+#logo{
+max-width:310px;
+margin: 0 auto;
+}
+
+#imglogo{
+height: 300px;
+}
+
+
+/*nav*/
+
+#menu{
+max-width:670px;
+margin:0px auto 0px auto;
+height: 85px;
+}
+
+#menu a{
+color: #ffffff;
+}
+
+a:active .btnNav{
+background-color:#FF9C30;
+}
+
+.btnNav{
+padding:0;
+margin:0;
+list-style:none; 
+float:left; 
+font-size:35pt;
+height: 65px;
+}
+
+.item{
+margin-right:5px;
+position:relative; 
+float:left; 
+border-right:1px solid #c0c0c0;
+text-align:center; 
+background-color:#ccc;
+padding: 5px 0px 0px 0px;
+width: 219px;
+height: 61px;
+}
+
+#bancoNav{
+margin-right:0px;
+}
+
+/*Section*/
+
+#bolsa{
+max-width:295px;
+margin:0px auto 0px auto;
+}
+
+.btnRandom {
+font-family: 'Roboto', sans-serif;
+color: #ffffff;
+font-size: 50px;
+background: #3498db;
+padding: 20px 80px 30px 80px;
+text-decoration: none;
+border: 0;
+}
+
+#valorVariacao{
+font-family: 'Luckiest Guy', cursive;
+color: #0B7A96;
+max-width: 381px;
+height:124px;
+font-size:40pt;
+margin: 0px auto;
+text-align:center;
+/*margin: 0 auto 300px auto;*/
+}
+
+/*---Pages---*/
+
+/*Banco*/
+
+#banco{
+margin-left:60px;
+}
+
+.user{
+height:75px;
+float:left;
+margin-bottom:10px;
+padding: 10px 0 0px 30px;
+font-size: 30pt;
+background-color: #ccc;
+}
+
+.playUser{
+width:245px;
+}
+
+.playLucro{
+width:260px;
+margin-right: 21px;
+padding-right: 20px;
+}
+
+.btnsLucro{
+float: right;
+}
+
+.botao{
+height:50px;
+width:50px;
+font-size:20pt;
+color:#fff;
+background-color: #0B7A96;
+}
+
+
