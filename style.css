@@ -40,7 +40,6 @@ font-size: 70pt;
 
 #involucro{
 max-width:720px;
-height:920px;
 margin: 0 auto;
 background-color: #FFDD00;
 }
@@ -51,7 +50,7 @@ header h1{
 font-family: 'Luckiest Guy', cursive;
 color: #0B7A96;
 max-width: 381px;
-font-size:35pt;
+font-size:30pt;
 margin: 20px auto;
 text-align:center;
 }
@@ -87,7 +86,7 @@ padding:0;
 margin:0;
 list-style:none; 
 float:left; 
-font-size:35pt;
+font-size:27pt;
 height: 65px;
 }
 
@@ -99,7 +98,7 @@ border-right:1px solid #c0c0c0;
 text-align:center; 
 background-color:#ccc;
 padding: 5px 0px 0px 0px;
-width: 219px;
+width: 105px;
 height: 61px;
 }
 
@@ -107,7 +106,30 @@ height: 61px;
 margin-right:0px;
 }
 
-/*Section*/
+
+/*-----PAGES-----*/
+
+/*Dado*/
+
+.btnDado{
+font-family: 'Roboto', sans-serif;
+color: #ffffff;
+font-size: 50px;
+background: #7661A4;
+padding: 20px 80px 30px 80px;
+margin-top: 0px;
+text-decoration: none;
+border: 0;
+border-radius: 78px;
+}
+
+
+.resultDado{
+font-size: 100pt;
+color:#D85858;
+}
+
+/*Bolsa*/
 
 #bolsa{
 max-width:295px;
@@ -120,9 +142,11 @@ color: #ffffff;
 font-size: 50px;
 background: #3498db;
 padding: 20px 80px 30px 80px;
+margin-top: 20px;
 text-decoration: none;
 border: 0;
 }
+
 
 #valorVariacao{
 font-family: 'Luckiest Guy', cursive;
@@ -132,15 +156,29 @@ height:124px;
 font-size:40pt;
 margin: 0px auto;
 text-align:center;
-/*margin: 0 auto 300px auto;*/
+margin: 0 auto 40px auto;
 }
 
-/*---Pages---*/
+.valor{
+margin-left:92px;
+}
+
+.ganho{
+background:url("ganho-bolsa.png") no-repeat;
+}
+
+.perda{
+background:url("perda-bolsa.png") no-repeat;
+}
+
+.equilibrado{
+background:url("equilibrio.png") no-repeat;
+}
 
 /*Banco*/
 
 #banco{
-margin-left:60px;
+margin-left:0px;
 }
 
 .user{
@@ -153,13 +191,13 @@ background-color: #ccc;
 }
 
 .playUser{
-width:245px;
+width:300px;
 }
 
 .playLucro{
-width:260px;
-margin-right: 21px;
-padding-right: 20px;
+width:295px;
+margin: -5px 0 21px 0;
+padding-right: 5px;
 }
 
 .btnsLucro{
@@ -171,7 +209,61 @@ height:50px;
 width:50px;
 font-size:20pt;
 color:#fff;
-background-color: #0B7A96;
+background-color: #3075B0;
 }
 
 
+.players{
+height:150px;
+margin-bottom:10px;
+color:#fff;
+}
+
+
+#user1{
+background-color: #00A9B9;
+}
+
+#lucro1{
+background-color: #00B7B7;
+}
+
+#user2{
+background-color: #B12273;
+}
+
+#lucro2{
+background-color: #BF4289;
+}
+
+#user3{
+background-color: #84B259;
+}
+
+#lucro3{
+background-color: #B0D68C;
+}
+
+#user4{
+background-color: #BD3231;
+}
+
+#lucro4{
+background-color: #D85858;
+}
+
+#user5{
+background-color: #563E89;
+}
+
+#lucro5{
+background-color: #7661A4;
+}
+
+#user6{
+background-color: #DD962A;
+}
+
+#lucro6{
+background-color: #EFB152;
+}
