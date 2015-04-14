@@ -14,7 +14,7 @@ color: #1C252E;
 }
 
 header,nav,section,article,footer{
-margin:5px; 
+margin:0px; 
 padding:8px;
 }
 
@@ -35,7 +35,7 @@ text-decoration: none;
 }
 
 span{
-font-size: 70pt;
+font-size: 85pt;
 }
 
 #involucro{
@@ -156,7 +156,7 @@ height:124px;
 font-size:40pt;
 margin: 0px auto;
 text-align:center;
-margin: 0 auto 40px auto;
+margin: 0 auto 0px auto;
 }
 
 .valor{
