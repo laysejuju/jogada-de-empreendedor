@@ -39,7 +39,7 @@ font-size: 85pt;
 }
 
 #involucro{
-max-width:720px;
+max-width:344px; /*720px*/
 margin: 0 auto;
 background-color: #FFDD00;
 }
@@ -50,8 +50,8 @@ header h1{
 font-family: 'Luckiest Guy', cursive;
 color: #0B7A96;
 max-width: 381px;
-font-size:30pt;
-margin: 20px auto;
+font-size:19pt;
+margin: 2px auto;
 text-align:center;
 }
 
@@ -117,12 +117,12 @@ color: #ffffff;
 font-size: 50px;
 background: #7661A4;
 padding: 20px 80px 30px 80px;
-margin-top: 0px;
+margin-top: -33px;
+margin-bottom: 33px;
 text-decoration: none;
 border: 0;
 border-radius: 78px;
 }
-
 
 .resultDado{
 font-size: 100pt;
@@ -142,7 +142,7 @@ color: #ffffff;
 font-size: 50px;
 background: #3498db;
 padding: 20px 80px 30px 80px;
-margin-top: 20px;
+margin-top: 0px;
 text-decoration: none;
 border: 0;
 }
@@ -179,6 +179,26 @@ background:url("equilibrio.png") no-repeat;
 
 #banco{
 margin-left:0px;
+}
+
+#grafico{
+margin: -35px 0 10px 0;
+}
+
+#chart-area{
+margin-left: 13px;
+}
+
+
+.btnContas{
+font-family: 'Roboto', sans-serif;
+color: #ffffff;
+font-size: 25px;
+background: #3498db;
+padding: 7px 123px 8px 128px;
+margin-bottom: 10px;
+text-decoration: none;
+border: 0;
 }
 
 .user{

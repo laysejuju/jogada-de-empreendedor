@@ -23,11 +23,56 @@ function onBolsa(){
 
 function onBanco(){	
 	document.getElementById("dado").innerHTML ='';
-	document.getElementById("banco").innerHTML ='<div id="play1" class="players"></div><div id="play2" class="players"></div><div id="play3" class="players"></div><div id="play4" class="players"></div><div id="play5" class="players"></div><div id="play6" class="players"></div></div>';
+	document.getElementById("banco").innerHTML ='<div id="grafico"><canvas id="chart-area" width="300" height="300"/></div><button class="btnContas" onClick="mostrarContas();">Contas</button> <div id="play1" class="players"></div><div id="play2" class="players"></div><div id="play3" class="players"></div><div id="play4" class="players"></div><div id="play5" class="players"></div><div id="play6" class="players"></div></div>';
 	document.getElementById("bolsa").innerHTML ='';
 	document.getElementById("valorVariacao").innerHTML = '';
-	adicionarPlay();
+	//adicionarPlay();
+	var pieData = [
+				{
+					value: lucro1,
+					color:"#00A9B9",
+					highlight: "#00B7B7",
+					label: "AppleBr"
+				},
+				{
+					value: lucro2,
+					color: "#B12273",
+					highlight: "#BF4289",
+					label: "SuperEmpresa"
+				},
+				{
+					value: lucro3,
+					color: "#84B259",
+					highlight: "#B0D68C",
+					label: "TCCNow"
+				},
+				{
+					value: lucro4,
+					color: "#BD3231",
+					highlight: "#D85858",
+					label: "QuebradaSA"
+				},
+				{
+					value: lucro5,
+					color: "#563E89",
+					highlight: "#7661A4",
+					label: "Investe AL"
+				},
+				{
+					value: lucro6,
+					color: "#DD962A",
+					highlight: "#EFB152",
+					label: "The Win"
+				}
+
+			];
+
+			var ctx = document.getElementById("chart-area").getContext("2d");
+			window.myPie = new Chart(ctx).Pie(pieData);
+			
+	
 }
+
 
 
 //----DADO-------------------------------------------------------------------------
@@ -128,33 +173,33 @@ function variar(){
 	//Condições
 	function condicoes(){
 	
-		var variacaoBolsa = Math.round(Math.random() * (10 -1)+1);
+		var variacaoBolsa = Math.round(Math.random() * (11 -1)+1);
 	
-		if(variacaoBolsa <= 4){
+		if(variacaoBolsa <= 5){
 			document.getElementById("valorVariacao").innerHTML ="<span class='perda'>"+ "<span class='valor'>" + "- "+ variacaoBolsa;
 		}
 		
-		if(variacaoBolsa == 5){
+		if(variacaoBolsa == 6){
 			document.getElementById("valorVariacao").innerHTML ='<span class="equilibrado">'+ "<span class='valor'>";
 		}
 		
-		if(variacaoBolsa == 6){
+		if(variacaoBolsa == 7){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 1";
 		}
 		
-		if(variacaoBolsa == 7){
+		if(variacaoBolsa == 8){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">'+ "<span class='valor'>" + "+ 2";
 		}
 		
-		if(variacaoBolsa == 8){
+		if(variacaoBolsa == 9){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>" + "+ 3";
 		}
 		
-		if(variacaoBolsa == 9){
+		if(variacaoBolsa == 10){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 4";
 		}
 		
-		if(variacaoBolsa == 10){
+		if(variacaoBolsa == 11){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 5";
 		}
 	}	
@@ -165,18 +210,18 @@ function variar(){
 
 var lucro1, lucro2, lucro3, lucro4, lucro5, lucro6;
 
-lucro1=0;
-lucro2=0; 
-lucro3=0; 
-lucro4=0; 
-lucro5=0; 
-lucro6=0;    
+lucro1=10;
+lucro2=10; 
+lucro3=10; 
+lucro4=10; 
+lucro5=10; 
+lucro6=10;    
 
 
 	function playBox(play,lucro,n,nome){
 	document.getElementById(play).innerHTML ='<div id="user'+n+'" class="user playUser">'+nome+'</div>'+ '<div id="lucro'+n+'" class="user playLucro">'+ '$'+ lucro 
-	+'<div class="btnsLucro"><button class="botao" onClick="adicionarLucro'+n+'()"' +';'+ '">+</button>'+''
-	+'<button class="botao" onClick="subtrairLucro'+n+'()"'+';'+'">-</button></div></div>';	
+	+'<div class="btnsLucro"><button class="botao" onClick="subtrairLucro'+n+'()"' +';'+ '">-</button>'+''
+	+'<button class="botao" onClick="adicionarLucro'+n+'()"'+';'+'">+</button></div></div>';	
 	}
 
 	function clearPlayBox(player){
@@ -251,8 +296,11 @@ lucro6=0;
 	}
 	
 
-//Adicionar Jogadores
 
+
+function mostrarContas(){
+	adicionarPlay();
+}
 
 function adicionarPlay(){
 
