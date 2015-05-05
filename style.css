@@ -5,11 +5,40 @@ João Pessoa, PB - Brasil - 2015
 
 --------------------------------------------------------------------*/
 
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('PoiretOne-Regular.eot'); /* IE9 Compat Modes */
+  src: url('PoiretOne-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('PoiretOne-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('PoiretOne-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('PoiretOne-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('PoiretOne-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Regular.eot'); /* IE9 Compat Modes */
+  src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('Roboto-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Roboto-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'LuckiestGuy';
+  src: url('LuckiestGuy.eot'); /* IE9 Compat Modes */
+  src: url('LuckiestGuy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('LuckiestGuy.woff2') format('woff2'), /* Super Modern Browsers */
+       url('LuckiestGuy.woff') format('woff'), /* Pretty Modern Browsers */
+       url('LuckiestGuy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('LuckiestGuy.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 body{
 background-color:#c5c5c5;
 background-image: url('retina_wood.png');
-font-family: 'Poiret One', cursive;
+font-family: 'PoiretOne', cursive;
 color: #1C252E;
 }
 
@@ -47,7 +76,7 @@ background-color: #FFDD00;
 /*header*/
 
 header h1{
-font-family: 'Luckiest Guy', cursive;
+font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
 font-size:19pt;
@@ -149,7 +178,7 @@ border: 0;
 
 
 #valorVariacao{
-font-family: 'Luckiest Guy', cursive;
+font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
 height:124px;
