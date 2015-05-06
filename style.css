@@ -40,6 +40,7 @@ background-color:#c5c5c5;
 background-image: url('retina_wood.png');
 font-family: 'PoiretOne', cursive;
 color: #1C252E;
+margin:0;
 }
 
 header,nav,section,article,footer{
@@ -68,14 +69,14 @@ font-size: 85pt;
 }
 
 #involucro{
-max-width:344px; /*720px*/
-margin: 0 auto;
+max-width:359px; /*720px*/
+margin: 0;
 background-color: #FFDD00;
 }
 
 /*header*/
 
-header h1{
+header h1{ /*Tirei :D*/
 font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
@@ -98,7 +99,7 @@ height: 300px;
 
 #menu{
 max-width:670px;
-margin:0px auto 0px auto;
+margin: -7px;
 height: 85px;
 }
 
@@ -120,7 +121,7 @@ height: 65px;
 }
 
 .item{
-margin-right:5px;
+margin-right:19px;
 position:relative; 
 float:left; 
 border-right:1px solid #c0c0c0;
@@ -181,7 +182,6 @@ border: 0;
 font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
-height:124px;
 font-size:40pt;
 margin: 0px auto;
 text-align:center;
@@ -207,7 +207,7 @@ background:url("equilibrio.png") no-repeat;
 /*Banco*/
 
 #banco{
-margin-left:0px;
+margin-left:-7px;
 }
 
 #grafico{
@@ -218,6 +218,19 @@ margin: -35px 0 10px 0;
 margin-left: 13px;
 }
 
+#valores{
+height:73px;
+margin: 0 0 19px 0;
+background-color:#ccc;
+}
+
+.valorStyle{
+  width: 44px;
+  float: left;
+  margin-right: 5px;
+  padding: 5px;
+  background-color: #dedede;
+}
 
 .btnContas{
 font-family: 'Roboto', sans-serif;
@@ -231,7 +244,7 @@ border: 0;
 }
 
 .user{
-height:75px;
+height:102px;
 float:left;
 margin-bottom:10px;
 padding: 10px 0 0px 30px;
@@ -244,26 +257,32 @@ width:300px;
 }
 
 .playLucro{
-width:295px;
-margin: -5px 0 21px 0;
+width:185px;
+margin: 2px 0 21px 0;
 padding-right: 5px;
+float:float;
+}
+
+.playLucro p{
+margin:0;
 }
 
 .btnsLucro{
-float: right;
+float: right; /*Tirei! :D*/
 }
 
 .botao{
-height:50px;
-width:50px;
+height: 114px;
+width: 65px;
 font-size:20pt;
 color:#fff;
 background-color: #3075B0;
+float: left;
 }
 
 
 .players{
-height:150px;
+height:133px;
 margin-bottom:10px;
 color:#fff;
 }
