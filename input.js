@@ -13,7 +13,7 @@ function onDado(){
 	document.getElementById("bolsa").innerHTML ='';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "124px";
+	document.getElementById("valorVariacao").style.height = "188px";
 }
 
 function onBolsa(){	
@@ -22,7 +22,7 @@ function onBolsa(){
 	document.getElementById("banco").innerHTML ='';	
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "124px";
+	document.getElementById("valorVariacao").style.height = "188px";
 	
 }
 

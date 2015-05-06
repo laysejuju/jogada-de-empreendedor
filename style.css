@@ -69,21 +69,12 @@ font-size: 85pt;
 }
 
 #involucro{
-max-width:359px; /*720px*/
+max-width:352px; /*720px*/
 margin: 0;
 background-color: #FFDD00;
 }
 
 /*header*/
-
-header h1{ /*Tirei :D*/
-font-family: 'LuckiestGuy', cursive;
-color: #0B7A96;
-max-width: 381px;
-font-size:23pt;
-margin: 11px auto;
-text-align:center;
-}
 
 #logo{
 max-width:310px;
@@ -99,7 +90,7 @@ height: 300px;
 
 #menu{
 max-width:670px;
-margin: -7px;
+margin: -7px -7px 15px -7px;
 height: 85px;
 }
 
@@ -121,7 +112,7 @@ height: 65px;
 }
 
 .item{
-margin-right:19px;
+margin-right:16px;
 position:relative; 
 float:left; 
 border-right:1px solid #c0c0c0;
@@ -147,7 +138,7 @@ color: #ffffff;
 font-size: 50px;
 background: #7661A4;
 padding: 20px 80px 30px 80px;
-margin-top: -33px;
+margin-top: -13px;
 margin-bottom: 33px;
 text-decoration: none;
 border: 0;
@@ -172,7 +163,7 @@ color: #ffffff;
 font-size: 50px;
 background: #3498db;
 padding: 20px 80px 30px 80px;
-margin-top: 0px;
+margin-top: 20px;
 text-decoration: none;
 border: 0;
 }
@@ -208,6 +199,7 @@ background:url("equilibrio.png") no-repeat;
 
 #banco{
 margin-left:-7px;
+margin-right: -10px;
 }
 
 #grafico{
@@ -219,17 +211,44 @@ margin-left: 13px;
 }
 
 #valores{
-height:73px;
-margin: 0 0 19px 0;
-background-color:#ccc;
+height:131px;
+margin: 20px 0 19px 0;
 }
 
 .valorStyle{
-  width: 44px;
-  float: left;
-  margin-right: 5px;
-  padding: 5px;
-  background-color: #dedede;
+width: 77px;
+float: left;
+margin: 0 16px 10px 14px;
+padding: 5px;
+height:50px;
+font-size: 27pt;
+text-align: center;
+color:#fff;
+}
+
+#valor1{
+background-color: #00A9B9;
+}
+
+#valor2{
+background-color: #B12273;
+}
+
+#valor3{
+background-color: #84B259;
+}
+
+#valor4{
+background-color: #BD3231;
+}
+
+#valor5{
+background-color: #563E89;
+}
+
+#valor6{
+background-color: #DD962A;
+margin-right: 0px;
 }
 
 .btnContas{
@@ -244,10 +263,10 @@ border: 0;
 }
 
 .user{
-height:102px;
+height:75px;
 float:left;
 margin-bottom:10px;
-padding: 10px 0 0px 30px;
+padding: 10px 0 0px 0px;
 font-size: 30pt;
 background-color: #ccc;
 }
@@ -257,22 +276,20 @@ width:300px;
 }
 
 .playLucro{
-width:185px;
-margin: 2px 0 21px 0;
+width:218px;
+margin: 2px 0 0 0;
 padding-right: 5px;
 float:float;
+text-align:center;
+font-size:20pt;
 }
 
 .playLucro p{
 margin:0;
 }
 
-.btnsLucro{
-float: right; /*Tirei! :D*/
-}
-
 .botao{
-height: 114px;
+height: 87px;
 width: 65px;
 font-size:20pt;
 color:#fff;
@@ -282,8 +299,8 @@ float: left;
 
 
 .players{
-height:133px;
-margin-bottom:10px;
+height:100px;
+margin-bottom:0px;
 color:#fff;
 }
 
