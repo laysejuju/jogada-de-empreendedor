@@ -119,7 +119,7 @@ border-right:1px solid #c0c0c0;
 text-align:center; 
 background-color:#ccc;
 padding: 5px 0px 0px 0px;
-width: 105px;
+width: 108px;
 height: 61px;
 }
 
@@ -202,7 +202,7 @@ margin-right: -10px;
 }
 
 #grafico{
-margin: -35px 0 10px 0;
+margin: -42px 0 10px 0;
 }
 
 #chart-area{
@@ -211,7 +211,7 @@ margin-left: 30px;
 
 #valores{
 height:131px;
-margin: 20px 0 19px 0;
+margin: 20px 0 16px 0;
 }
 
 .valorStyle{
@@ -248,6 +248,18 @@ background-color: #563E89;
 #valor6{
 background-color: #DD962A;
 margin-right: 0px;
+}
+
+#scroll{
+text-align:center;
+font-size:20pt;
+margin: -7px;
+}
+
+#scroll2{
+text-align:center;
+font-size:20pt;
+margin-top: -22px;
 }
 
 .btnContas{
@@ -289,7 +301,7 @@ margin:0;
 
 .botao{
 height: 87px;
-width: 65px;
+width: 69px;
 font-size:20pt;
 color:#fff;
 background-color: #3075B0;

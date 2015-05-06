@@ -14,17 +14,17 @@ function onDado(){
 	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "188px";
+	document.getElementById("valorVariacao").style.height = "217px";
 }
 
 function onBolsa(){	
 	document.getElementById("dado").innerHTML ='';
 	document.getElementById("bolsa").innerHTML ='<button class="btnRandom" onClick="variar();">Variar</button>';
 	document.getElementById("banco").innerHTML ='';	
-	document.getElementById("creditos").innerHTML ='';
+	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "240px";
+	document.getElementById("valorVariacao").style.height = "217px";
 	
 }
 
@@ -39,6 +39,8 @@ function onBanco(){
 	'<div id="valor5" class="valorStyle">'+lucro5+'</div>'+
 	'<div id="valor6" class="valorStyle">'+lucro6+'</div>'+
 	'</div>'+
+	'<div id="scroll">V</div>'+
+	'<div id="scroll2">V</div>'+
 	'<div id="play1" class="players"></div>' +
 	'<div id="play2" class="players"></div>'+
 	'<div id="play3" class="players"></div>'+ 
