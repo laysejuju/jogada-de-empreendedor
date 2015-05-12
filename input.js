@@ -31,7 +31,7 @@ function onBolsa(){
 function onBanco(){	
 	document.getElementById("dado").innerHTML ='';
 	document.getElementById("banco").innerHTML =
-	'<div id="grafico"><canvas id="chart-area" width="300" height="300"/></div>' + 
+	'<div id="grafico" onClick="onBanco();"><canvas id="chart-area" width="300" height="300"/></div>' + 
 	'<div id="valores"> <div id="valor1" class="valorStyle">'+lucro1+'</div>'+
 	'<div id="valor2" class="valorStyle">'+lucro2+'</div>'+
 	'<div id="valor3" class="valorStyle">'+lucro3+'</div>'+
@@ -101,7 +101,6 @@ function onBanco(){
 			var ctx = document.getElementById("chart-area").getContext("2d");
 			window.myPie = new Chart(ctx).Pie(pieData);
 			
-	
 }
 
 
@@ -263,73 +262,61 @@ lucro6=10;
 	function adicionarLucro1(){
 		lucro1++;
 		playBox("play1",lucro1,1,"AppleBr");
-		onBanco();
 	}
 	
 	function adicionarLucro2(){
 		lucro2++;
 		playBox("play2",lucro2,2,"SuperEmpresa");
-		onBanco();
 	}
 
 	function adicionarLucro3(){
 		lucro3++;
-		playBox("play3",lucro3,3,"TCCNow");	
-		onBanco();
+		playBox("play3",lucro3,3,"TCCNow");
 	}
 	
 	function adicionarLucro4(){
 		lucro4++;
 		playBox("play4",lucro4,4,"QuebradaSA");
-		onBanco();
 	}	
 
 	function adicionarLucro5(){
 		lucro5++;
 		playBox("play5",lucro5,5, "Investe AL");
-		onBanco();
 	}	
 
 	function adicionarLucro6(){
 		lucro6++;
 		playBox("play6",lucro6,6, "The Win");
-		onBanco();
 	}		
 	
 	function subtrairLucro1(){
 		lucro1--;
 		playBox("play1",lucro1,1,"AppleBr");
-		onBanco();
 	}
 	
 	function subtrairLucro2(){
 		lucro2--;
 		playBox("play2",lucro2,2,"SuperEmpresa");
-		onBanco();
 	}
 	
 	function subtrairLucro3(){
 		lucro3--;
 		playBox("play3",lucro3,3,"TCCNow");	
-		onBanco();
 	}
 	
 	function subtrairLucro4(){
 		lucro4--;
 		playBox("play4",lucro4,4,"QuebradaSA");
-		onBanco();
 	}
 
 	function subtrairLucro5(){
 		lucro5--;
 		playBox("play5",lucro5,5, "Investe AL");
-		onBanco();
 	}
 
 	function subtrairLucro6(){
 		lucro6--;
 		playBox("play6",lucro6,6, "The Win");
-		onBanco();
 	}
 	
 
