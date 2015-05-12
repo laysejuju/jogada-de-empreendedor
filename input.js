@@ -48,7 +48,7 @@ function onBanco(){
 	'<div id="play5" class="players"></div>'+
 	'<div id="play6" class="players"></div></div>';
 	
-	document.getElementById("banco").style.marginBottom = "-55px";
+	document.getElementById("banco").style.marginBottom = "-38px";
 	document.getElementById("bolsa").innerHTML ='';
 	document.getElementById("creditos").innerHTML='';
 	document.getElementById("valorVariacao").innerHTML = '';
@@ -62,38 +62,38 @@ function onBanco(){
 				{
 					value: lucro1,
 					color:"#00A9B9",
-					highlight: "#00B7B7",
-					label: "AppleBr"
+					highlight: "#00A9B9",
+					label: "Atualizar"
 				},
 				{
 					value: lucro2,
 					color: "#B12273",
-					highlight: "#BF4289",
-					label: "SuperEmpresa"
+					highlight: "#B12273",
+					label: "Atualizar"
 				},
 				{
 					value: lucro3,
 					color: "#84B259",
-					highlight: "#B0D68C",
-					label: "TCCNow"
+					highlight: "#84B259",
+					label: "Atualizar"
 				},
 				{
 					value: lucro4,
 					color: "#BD3231",
-					highlight: "#D85858",
-					label: "QuebradaSA"
+					highlight: "#BD3231",
+					label: "Atualizar"
 				},
 				{
 					value: lucro5,
 					color: "#563E89",
-					highlight: "#7661A4",
-					label: "Investe AL"
+					highlight: "#563E89",
+					label: "Atualizar"
 				},
 				{
 					value: lucro6,
 					color: "#DD962A",
-					highlight: "#EFB152",
-					label: "The Win"
+					highlight: "#DD962A",
+					label: "Atualizar"
 				}
 
 			];
@@ -276,7 +276,7 @@ lucro6=10;
 	
 	function adicionarLucro4(){
 		lucro4++;
-		playBox("play4",lucro4,4,"QuebradaSA");
+		playBox("play4",lucro4,4,"FalidaSA");
 	}	
 
 	function adicionarLucro5(){
@@ -306,7 +306,7 @@ lucro6=10;
 	
 	function subtrairLucro4(){
 		lucro4--;
-		playBox("play4",lucro4,4,"QuebradaSA");
+		playBox("play4",lucro4,4,"FalidaSA");
 	}
 
 	function subtrairLucro5(){
@@ -329,10 +329,10 @@ function mostrarContas(){
 function adicionarPlay(){
 
 			playBox("play1",lucro1,1,"AppleBr");
-			playBox("play2",lucro2,2,"SuperU");	
+			playBox("play2",lucro2,2,"SuperEmpresa");	
 			playBox("play3",lucro3,3,"TCCNow");		
 			playBox("play4",lucro4,4,"FalidaSA");
-			playBox("play5",lucro5,5,"ALegre");		
+			playBox("play5",lucro5,5,"Investe AL");		
 			playBox("play6",lucro6,6,"The Win");			
 
 }
