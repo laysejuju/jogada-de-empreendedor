@@ -3,7 +3,17 @@ CSS by Layse Julyanne, Design by Ângela Oliveira & Supervision by Cleber Morais
 
 João Pessoa, PB - Brasil - 2015
 
---------------------------------------------------------------------*/
+---Summary-------------------
+
+#GLOBAL
+#NAV
+#PAGES
+	- DADO
+	- BOLSA
+	- BANCO
+---------------------*/
+
+/*------GLOBAL------------------------------------------------------*/
 
 @font-face {
   font-family: 'PoiretOne';
@@ -68,25 +78,15 @@ span{
 font-size: 85pt;
 }
 
+/*----------------------*/
+
 #involucro{
-max-width:361px; /*720px*/
+max-width:361px;
 margin: 0;
 background-color: #FFDD00;
 }
 
-/*header*/
-
-#logo{
-max-width:310px;
-margin: 0 auto;
-}
-
-#imglogo{
-height: 300px;
-}
-
-
-/*nav*/
+/*-----NAV------------------------------------------------------*/
 
 #menu{
 max-width:670px;
@@ -126,9 +126,10 @@ height: 61px;
 #bancoNav{
 margin-right:0px;
 }
+/*----------------------*/
 
 
-/*-----PAGES-----*/
+/*-----PAGES------------------------------------------------------*/
 
 /*Dado*/
 
@@ -167,15 +168,13 @@ text-decoration: none;
 border: 0;
 }
 
-
 #valorVariacao{
 font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
 font-size:40pt;
-margin: 0px auto;
 text-align:center;
-margin: 0 auto 0px auto;
+margin: 0px auto 0px auto;
 }
 
 .valor{
@@ -309,13 +308,11 @@ background-color: #3075B0;
 float: left;
 }
 
-
 .players{
 height:100px;
 margin-bottom:0px;
 color:#fff;
 }
-
 
 #user1{
 background-color: #00A9B9;

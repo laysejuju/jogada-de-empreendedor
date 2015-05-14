@@ -14,7 +14,8 @@ function onDado(){
 	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "217px";
+	document.getElementById("valorVariacao").style.height = "206px";
+	document.getElementById("valorVariacao").style.marginTop = "30px";
 }
 
 function onBolsa(){	
@@ -24,7 +25,8 @@ function onBolsa(){
 	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "217px";
+	document.getElementById("valorVariacao").style.height = "206px";
+	document.getElementById("valorVariacao").style.marginTop = "30px";
 	
 }
 
@@ -207,30 +209,37 @@ function variar(){
 	
 		if(variacaoBolsa <= 5){
 			document.getElementById("valorVariacao").innerHTML ="<span class='perda'>"+ "<span class='valor'>" + "- "+ variacaoBolsa;
+			lucro1-=variacaoBolsa; lucro2-=variacaoBolsa; lucro3-=variacaoBolsa; lucro4-=variacaoBolsa; lucro5-=variacaoBolsa; lucro6-=variacaoBolsa;
 		}
 		
 		if(variacaoBolsa == 6){
 			document.getElementById("valorVariacao").innerHTML ='<span class="equilibrado">'+ "<span class='valor'>";
+			
 		}
 		
 		if(variacaoBolsa == 7){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 1";
+			lucro1+=1; lucro2+=1; lucro3+=1; lucro4+=1; lucro5+=1; lucro6+=1;
 		}
 		
 		if(variacaoBolsa == 8){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">'+ "<span class='valor'>" + "+ 2";
+			lucro1+=2; lucro2+=2; lucro3+=2; lucro4+=2; lucro5+=2; lucro6+=2;
 		}
 		
 		if(variacaoBolsa == 9){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>" + "+ 3";
+			lucro1+=3; lucro2+=3; lucro3+=3; lucro4+=3; lucro5+=3; lucro6+=3;
 		}
 		
 		if(variacaoBolsa == 10){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 4";
+			lucro1+=4; lucro2+=4; lucro3+=4; lucro4+=4; lucro5+=4; lucro6+=4;
 		}
 		
 		if(variacaoBolsa == 11){
 			document.getElementById("valorVariacao").innerHTML ='<span class="ganho">' + "<span class='valor'>"+ "+ 5";
+			lucro1+=5; lucro2+=5; lucro3+=5; lucro4+=5; lucro5+=5; lucro6+=5;
 		}
 	}	
 
