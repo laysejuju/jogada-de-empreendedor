@@ -14,7 +14,7 @@ function onDado(){
 	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "206px";
+	document.getElementById("valorVariacao").style.height = "200px";
 	document.getElementById("valorVariacao").style.marginTop = "30px";
 }
 
@@ -25,7 +25,7 @@ function onBolsa(){
 	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
-	document.getElementById("valorVariacao").style.height = "206px";
+	document.getElementById("valorVariacao").style.height = "200px";
 	document.getElementById("valorVariacao").style.marginTop = "30px";
 	
 }
