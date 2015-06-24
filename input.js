@@ -59,7 +59,6 @@ function onBanco(){
 
 	mostrarContas();
 	
-	//adicionarPlay();
 	var pieData = [
 				{
 					value: lucro1,
@@ -104,8 +103,6 @@ function onBanco(){
 			window.myPie = new Chart(ctx).Pie(pieData);
 			
 }
-
-
 
 //----DADO-------------------------------------------------------------------------
 
@@ -155,8 +152,6 @@ function sortear(){
 	}	
 
 }
-
-
 
 //----Bolsa de Valores-------------------------------------------------------------
 
@@ -340,6 +335,4 @@ function adicionarPlay(){
 			playBox("play4",lucro4,4,"FalidaSA");
 			playBox("play5",lucro5,5,"Investe AL");		
 			playBox("play6",lucro6,6,"The Win");			
-
 }
-	//Funções de adicionar e subtrair lucro
