@@ -15,6 +15,12 @@ João Pessoa, PB - Brasil - 2015
 
 /*------GLOBAL------------------------------------------------------*/
 
+textarea:focus, input:focus, select:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
 @font-face {
   font-family: 'PoiretOne';
   src: url('PoiretOne-Regular.eot'); /* IE9 Compat Modes */
@@ -82,7 +88,7 @@ font-size: 85pt;
 
 #involucro{
 max-width:361px;
-margin: 0;
+margin: 0 auto;
 background-color: #FFDD00;
 }
 
@@ -335,7 +341,7 @@ background-color: #84B259;
 }
 
 #lucro3{
-background-color: #B0D68C;
+background-color: #84B259;
 }
 
 #user4{

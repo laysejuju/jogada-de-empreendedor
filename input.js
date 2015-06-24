@@ -328,9 +328,6 @@ lucro6=10;
 		playBox("play6",lucro6,6, "The Win");
 	}
 	
-
-
-
 function mostrarContas(){
 	adicionarPlay();
 }
