@@ -11,7 +11,7 @@ function onDado(){
 	document.getElementById("banco").innerHTML ='';
 	document.getElementById("dado").innerHTML ='<button class="btnDado" onClick="sortear();">Sortear</button>';
 	document.getElementById("bolsa").innerHTML ='';
-	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
+	//document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & //Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
 	document.getElementById("valorVariacao").style.height = "195px";
@@ -22,7 +22,7 @@ function onBolsa(){
 	document.getElementById("dado").innerHTML ='';
 	document.getElementById("bolsa").innerHTML ='<button class="btnRandom" onClick="variar();">Variar</button>';
 	document.getElementById("banco").innerHTML ='';	
-	document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & Cleber Morais | Todos os direitos resevados | All rights reserved';
+	//document.getElementById("creditos").innerHTML ='&copy; Jogada de Empreendedor 2015 Layse Julyanne, Ângela Oliveira & //Cleber Morais | Todos os direitos resevados | All rights reserved';
 	document.getElementById("banco").style.marginBottom = "0px";
 	document.getElementById("valorVariacao").innerHTML = '';
 	document.getElementById("valorVariacao").style.height = "195px";

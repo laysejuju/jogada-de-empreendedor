@@ -11,6 +11,7 @@ João Pessoa, PB - Brasil - 2015
 	- DADO
 	- BOLSA
 	- BANCO
+#MEDIA QUERIES
 ---------------------*/
 
 /*------GLOBAL------------------------------------------------------*/
@@ -52,8 +53,8 @@ textarea:focus, input:focus, select:focus, button:focus {
 }
 
 body{
-background-color:#c5c5c5;
-background-image: url('retina_wood.png');
+background-color: #FFDD00;
+/*background-image: url('retina_wood.png');*/
 font-family: 'PoiretOne', cursive;
 color: #1C252E;
 margin:0;
@@ -87,7 +88,8 @@ font-size: 85pt;
 /*----------------------*/
 
 #involucro{
-max-width:361px;
+/*max-width:361px;*/
+width:100%;
 margin: 0 auto;
 background-color: #FFDD00;
 }
@@ -125,7 +127,7 @@ border-right:1px solid #c0c0c0;
 text-align:center; 
 background-color:#ccc;
 padding: 5px 0px 0px 0px;
-width: 108px;
+width: 30%;
 height: 61px;
 }
 
@@ -148,6 +150,9 @@ margin: -13px 0 33px 8px;
 text-decoration: none;
 border: 0;
 border-radius: 78px;
+position: relative;
+left: 50px;
+}
 }
 
 .resultDado{
@@ -177,7 +182,7 @@ border: 0;
 font-family: 'LuckiestGuy', cursive;
 color: #0B7A96;
 max-width: 381px;
-font-size:40pt;
+font-size:85pt;
 text-align:center;
 margin: 0px auto 0px auto;
 }
@@ -210,7 +215,9 @@ margin: -42px 0 10px 0;
 }
 
 #chart-area{
-margin-left: 30px;
+margin-left: 10%;
+width: 80% !important;
+height: auto !important;
 }
 
 #valores{
@@ -219,9 +226,9 @@ margin: 20px 0 16px 0;
 }
 
 .valorStyle{
-width: 77px;
+width: 21%;
 float: left;
-margin: 0 16px 10px 17px;
+margin: 0 16px 10px 5%;
 padding: 8px 5px 2px 5px;
 height:50px;
 font-size: 27pt;
@@ -292,7 +299,7 @@ width:300px;
 }
 
 .playLucro{
-width:218px;
+width:60%; /*218px*/
 margin: 2px 0 0 0;
 padding-right: 5px;
 float:float;
@@ -306,7 +313,7 @@ margin:0;
 
 .botao{
 height: 87px;
-width: 69px;
+
 font-size:20pt;
 color:#fff;
 background-color: #3075B0;
@@ -365,4 +372,154 @@ background-color: #DD962A;
 
 #lucro6{
 background-color: #EFB152;
+}
+
+
+/*-----MEDIA QUERIES------------------------------------------------------*/
+
+/*
+Pra dispositivos que tem uma largura mínima de 260 pixels.
+*/
+@media screen and (max-width: 370px) {
+	.item {
+		margin-right: 3px;
+		width: 32%;
+	}
+	
+	.botao{
+		width: 19%;
+	}
+	
+	.btnDado{
+		margin-left: 0;
+		left: 0;
+		width: 100%;
+	}
+	
+	.players {
+		position: relative;
+		left: 0%;
+	}
+	
+	section{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.valorStyle {
+		width: 20%;
+	}
+}
+
+/*
+Pra dispositivos que tem uma largura mínima de 368 pixels.
+*/
+@media screen and (min-width: 371px) {
+	
+	#involucro {
+		/*background-color: blue;*/
+	}
+  
+	.btnDado{
+		width: 94%;
+		left:0;
+	}
+	
+	.botao{
+		width: 19%;
+	}
+	
+	.players {
+		position: relative;
+		left: 0%;
+	}
+}
+
+/*
+Pra dispositivos que tem uma largura mínima de 500 pixels.
+*/
+@media screen and (min-width: 500px) {
+	#involucro {
+		/*background-color: green;*/
+	}
+
+	.btnDado{
+		width: 76%;
+		left:10%;
+	}
+	
+	.valorStyle{
+		margin-left: 7%;
+	}
+	
+	.players {
+		position: relative;
+		left: 0%;
+	}
+}
+
+/*
+Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
+*/
+@media screen and (min-width: 768px) {
+
+	#involucro {
+		/*background-color: yellow;*/
+	}
+
+	.btnDado{
+		width: 47%;
+		left:24%;
+	}
+	
+	#chart-area {
+		margin-left: 17%;
+		width: 64% !important;
+	}
+	
+	.players {
+		position: relative;
+		left: 0%;
+	}
+	
+ }
+ 
+/* 
+ Com uma largura mínima de 992 pixels. Monitores por exemplo.
+*/
+@media screen and (min-width: 992px) {
+ 
+ #involucro{ /*background-color: red;*/}
+
+
+	/*.btnDado{
+		width: 47%;
+		left:25%;
+	}*/
+	
+	.players {
+		position: relative;
+		left: 0%;
+	}
+
+ }
+/* 
+ Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
+*/
+@media screen and (min-width: 1200px) {
+  #involucro{/*background-color: black;*/}
+  
+	#chart-area {
+		margin-left: 34%;
+		width: 30% !important;
+	}
+	
+	.players {
+		position: relative;
+		left: 14%;
+	}
+	
+	.botao{
+	width: 69px;
+	}
 }
