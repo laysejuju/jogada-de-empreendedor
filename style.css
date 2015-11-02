@@ -57,12 +57,12 @@ background-color: #FFDD00;
 /*background-image: url('retina_wood.png');*/
 font-family: 'PoiretOne', cursive;
 color: #1C252E;
-margin:0 19px 0 0;
+margin:0;
 }
 
 header,nav,section,article,footer{
 margin:0px; 
-padding:8px;
+/*padding:8px;*/
 }
 
 footer{
@@ -146,7 +146,7 @@ color: #ffffff;
 font-size: 50px;
 background: #7661A4;
 padding: 20px 80px 30px 80px;
-margin: -13px 0 33px 8px;
+margin: 0 0 33px 8px;
 text-decoration: none;
 border: 0;
 border-radius: 78px;
@@ -173,7 +173,7 @@ color: #ffffff;
 font-size: 50px;
 background: #3498db;
 padding: 20px 80px 30px 80px;
-margin-top: 20px;
+margin-top: 0;
 text-decoration: none;
 border: 0;
 }
@@ -392,8 +392,8 @@ Pra dispositivos que tem uma largura mínima de 260 pixels.
 	
 	.btnDado{
 		margin-left: 0;
-		left: 0;
-		width: 100%;
+		left: 4px;
+		width: 98%;
 	}
 	
 	.players {
@@ -411,7 +411,7 @@ Pra dispositivos que tem uma largura mínima de 260 pixels.
 	}
 	
 	#menu{	
-		margin: -7px -5% 15px -8px;
+		margin: -7px 0 75px -8px;
 	}
 }
 
@@ -439,7 +439,7 @@ Pra dispositivos que tem uma largura mínima de 368 pixels.
 	}
 	
 	#menu{	
-		margin: -7px -5% 15px -8px;
+		margin: -7px 0 75px -8px;
 	}
 }
 
@@ -466,7 +466,7 @@ Pra dispositivos que tem uma largura mínima de 500 pixels.
 	}
 	
 	#menu{	
-		margin: -7px -5% 15px -8px;
+		margin: -7px 0 75px -8px;
 	}
 	
 }
@@ -496,7 +496,7 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{	
-		margin: -7px -7px 15px -8px;
+		margin: -7px -7px 75px -8px;
 	}
  }
  
@@ -519,7 +519,7 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{
-		margin: -7px -7px 15px -8px;
+		margin: -7px -7px 75px -8px;
 	}
 
  }
@@ -544,6 +544,6 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{
-		margin: -7px -7px 15px -8px;
+		margin: -7px 40px 75px -8px;
 	}
 }
