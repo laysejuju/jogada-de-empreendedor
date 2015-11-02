@@ -98,7 +98,7 @@ background-color: #FFDD00;
 
 #menu{
 max-width:670px;
-margin: -7px -7px 15px -8px;
+/*margin: -7px -7px 15px -8px;*/
 height: 85px;
 }
 
@@ -409,6 +409,10 @@ Pra dispositivos que tem uma largura mínima de 260 pixels.
 	.valorStyle {
 		width: 20%;
 	}
+	
+	#menu{	
+		margin: -7px -5% 15px -8px;
+	}
 }
 
 /*
@@ -433,6 +437,10 @@ Pra dispositivos que tem uma largura mínima de 368 pixels.
 		position: relative;
 		left: 0%;
 	}
+	
+	#menu{	
+		margin: -7px -5% 15px -8px;
+	}
 }
 
 /*
@@ -456,6 +464,11 @@ Pra dispositivos que tem uma largura mínima de 500 pixels.
 		position: relative;
 		left: 0%;
 	}
+	
+	#menu{	
+		margin: -7px -5% 15px -8px;
+	}
+	
 }
 
 /*
@@ -482,6 +495,9 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 		left: 0%;
 	}
 	
+	#menu{	
+		margin: -7px -7px 15px -8px;
+	}
  }
  
 /* 
@@ -500,6 +516,10 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	.players {
 		position: relative;
 		left: 0%;
+	}
+	
+	#menu{
+		margin: -7px -7px 15px -8px;
 	}
 
  }
@@ -521,5 +541,9 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	
 	.botao{
 	width: 69px;
+	}
+	
+	#menu{
+		margin: -7px -7px 15px -8px;
 	}
 }
