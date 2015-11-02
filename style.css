@@ -62,7 +62,7 @@ margin:0;
 
 header,nav,section,article,footer{
 margin:0px; 
-/*padding:8px;*/
+padding:8px;
 }
 
 footer{
@@ -411,7 +411,7 @@ Pra dispositivos que tem uma largura mínima de 260 pixels.
 	}
 	
 	#menu{	
-		margin: -7px 0 75px -8px;
+		margin: -7px -5% 15px -8px;
 	}
 }
 
@@ -439,7 +439,7 @@ Pra dispositivos que tem uma largura mínima de 368 pixels.
 	}
 	
 	#menu{	
-		margin: -7px 0 75px -8px;
+		margin: -7px -5% 15px -8px;
 	}
 }
 
@@ -466,7 +466,7 @@ Pra dispositivos que tem uma largura mínima de 500 pixels.
 	}
 	
 	#menu{	
-		margin: -7px 0 75px -8px;
+		margin: -7px -5% 15px -8px;
 	}
 	
 }
@@ -496,7 +496,7 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{	
-		margin: -7px -7px 75px -8px;
+		margin: -7px -7px 15px -8px;
 	}
  }
  
@@ -519,7 +519,7 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{
-		margin: -7px -7px 75px -8px;
+		margin: -7px -7px 15px -8px;
 	}
 
  }
@@ -544,6 +544,6 @@ Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo
 	}
 	
 	#menu{
-		margin: -7px 40px 75px -8px;
+		margin: -7px 40px 15px -8px;
 	}
 }
