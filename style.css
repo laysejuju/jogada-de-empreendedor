@@ -23,41 +23,67 @@ textarea:focus, input:focus, select:focus, button:focus {
 } 
 
 @font-face {
-  font-family: 'PoiretOne';
-  src: url('PoiretOne-Regular.eot'); /* IE9 Compat Modes */
-  src: url('PoiretOne-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('PoiretOne-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('PoiretOne-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('PoiretOne-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('PoiretOne-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'Roboto';
+  src: url('fonts/Roboto-Regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Roboto-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Roboto-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: url('Roboto-Regular.eot'); /* IE9 Compat Modes */
-  src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('Roboto-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('Roboto-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('Roboto-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('Roboto-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
+  font-family: 'RobotoCondensed';
+  src: url('fonts/Roboto-Condensed.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Roboto-Condensed.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Roboto-Condensed.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Roboto-Condensed.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Roboto-Condensed.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Roboto-Condensed.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('fonts/Roboto-Light.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Roboto-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Roboto-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Roboto-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Roboto-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('fonts/Roboto-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Roboto-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Roboto-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('fonts/Roboto-Thin.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Roboto-Thin.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Roboto-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Roboto-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/Roboto-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 @font-face {
   font-family: 'LuckiestGuy';
-  src: url('LuckiestGuy.eot'); /* IE9 Compat Modes */
-  src: url('LuckiestGuy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('LuckiestGuy.woff2') format('woff2'), /* Super Modern Browsers */
-       url('LuckiestGuy.woff') format('woff'), /* Pretty Modern Browsers */
-       url('LuckiestGuy.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('LuckiestGuy.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('fonts/LuckiestGuy.eot'); /* IE9 Compat Modes */
+  src: url('fonts/LuckiestGuy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/LuckiestGuy.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/LuckiestGuy.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/LuckiestGuy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/LuckiestGuy.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 
 body{
-background-color: #FFDD00;
-/*background-image: url('retina_wood.png');*/
-font-family: 'PoiretOne', cursive;
-color: #1C252E;
-margin:0;
+background-color: #F9DC2B !important;
 }
 
 header,nav,section,article,footer{
@@ -85,20 +111,23 @@ span{
 font-size: 85pt;
 }
 
+nav, #involucro, #valores, #grafico, .players{
+padding-left:0px !important;
+padding-right:0px !important;
+}
 /*----------------------*/
 
 #involucro{
-/*max-width:361px;*/
-width:100%;
 margin: 0 auto;
-background-color: #FFDD00;
+font-family: 'RobotoLight', sans-serif;
+color: #1C252E;
 }
+
 
 /*-----NAV------------------------------------------------------*/
 
 #menu{
-max-width:670px;
-/*margin: -7px -7px 15px -8px;*/
+margin: -8px 0px 30px 0px;
 height: 85px;
 }
 
@@ -106,8 +135,8 @@ height: 85px;
 color: #ffffff;
 }
 
-a:active .btnNav{
-background-color:#FF9C30;
+.btnNav.active {
+    background-color: #FF9C30;
 }
 
 .btnNav{
@@ -120,19 +149,20 @@ height: 65px;
 }
 
 .item{
-margin-right:16px;
 position:relative; 
 float:left; 
-border-right:1px solid #c0c0c0;
+border-right:2px solid #FF9C30;
 text-align:center; 
-background-color:#ccc;
-padding: 5px 0px 0px 0px;
-width: 30%;
+font-size: 24pt;
+background-color:#F1B136;
+padding: 8px 0px 0px 0px;
+width: 33%;
 height: 61px;
 }
 
 #bancoNav{
 margin-right:0px;
+border-right:0px;
 }
 /*----------------------*/
 
@@ -141,19 +171,17 @@ margin-right:0px;
 /*Dado*/
 
 .btnDado{
-font-family: 'Roboto', sans-serif;
+font-family: 'RobotoMedium', sans-serif;
 color: #ffffff;
 font-size: 50px;
-background: #7661A4;
+background: #7C57E4;
 padding: 20px 80px 30px 80px;
-margin: -10px 0 33px 8px;
+margin: 0 0 33px 0;
 text-decoration: none;
 border: 0;
 border-radius: 78px;
-position: relative;
-left: 50px;
 }
-}
+
 
 .resultDado{
 font-size: 100pt;
@@ -163,17 +191,17 @@ color:#D85858;
 /*Bolsa*/
 
 #bolsa{
-max-width:295px;
+
 margin:0px auto 0px auto;
 }
 
 .btnRandom {
-font-family: 'Roboto', sans-serif;
+font-family: 'RobotoMedium', sans-serif;
 color: #ffffff;
 font-size: 50px;
-background: #3498db;
+background: #18B5BE;
+margin-bottom: 1em;
 padding: 20px 80px 30px 80px;
-margin-top: 20px;
 text-decoration: none;
 border: 0;
 }
@@ -192,30 +220,28 @@ margin-left:92px;
 }
 
 .ganho{
-background:url("ganho-bolsa.png") no-repeat;
+background:url("images/ganho-bolsa.png") no-repeat;
 }
 
 .perda{
-background:url("perda-bolsa.png") no-repeat;
+background:url("images/perda-bolsa.png") no-repeat;
 }
 
 .equilibrado{
-background:url("equilibrio.png") no-repeat;
+background:url("images/equilibrio.png") no-repeat;
 }
 
 /*Banco*/
 
 #banco{
-margin-left:-7px;
-margin-right: -10px;
+
 }
 
 #grafico{
-margin: -42px 0 10px 0;
+
 }
 
 #chart-area{
-margin-left: 10%;
 width: 80% !important;
 height: auto !important;
 }
@@ -226,45 +252,51 @@ margin: 20px 0 16px 0;
 }
 
 .valorStyle{
-width: 21%;
-float: left;
-margin: 0 16px 10px 5%;
-padding: 8px 5px 2px 5px;
+margin: 0 10px 10px 5%;
+padding: 3px 5px 2px 5px;
 height:50px;
-font-size: 27pt;
+font-size: 25pt;
 text-align: center;
 color:#fff;
+font-family: 'RobotoMedium';
 }
 
-#valor1{
-background-color: #00A9B9;
+/*Blue*/
+#valor1, #lucro1{
+background-color: #18B5BE;
 }
 
-#valor2{
-background-color: #B12273;
+/*Pink*/
+#valor2, #lucro2{
+background-color: #C63F84;
 }
 
-#valor3{
-background-color: #84B259;
+/*Green*/
+#valor3, #lucro3{
+background-color: #27B647;
 }
 
-#valor4{
-background-color: #BD3231;
+/*Red*/
+#valor4, #lucro4{
+background-color: #F13136;
 }
 
-#valor5{
-background-color: #563E89;
+/*Purple*/
+#valor5, #lucro5{
+background-color: #7C57E4;
 }
 
-#valor6{
-background-color: #DD962A;
+/*Orange*/
+#valor6, #lucro6{
+background-color: #F1B136;
 margin-right: 0px;
 }
 
 #scroll{
 text-align:center;
 font-size:20pt;
-margin: -7px;
+color: #FF9C30;
+margin: 0px 0px 30px 0px;
 }
 
 #scroll2{
@@ -286,7 +318,7 @@ border: 0;
 }
 
 .user{
-height:75px;
+height:85px;
 float:left;
 margin-bottom:10px;
 padding: 10px 0 0px 0px;
@@ -304,7 +336,7 @@ margin: 2px 0 0 0;
 padding-right: 5px;
 float:float;
 text-align:center;
-font-size:20pt;
+font-size:18pt;
 }
 
 .playLucro p{
@@ -313,67 +345,25 @@ margin:0;
 
 .botao{
 height: 87px;
-
 font-size:20pt;
 color:#fff;
-background-color: #3075B0;
 float: left;
+}
+
+.btn-green{
+background-color: #46B136;
+}
+
+.btn-red{
+background-color: #D72C30;
 }
 
 .players{
 height:100px;
 margin-bottom:0px;
 color:#fff;
+font-family: 'RobotoThin';
 }
-
-#user1{
-background-color: #00A9B9;
-}
-
-#lucro1{
-background-color: #00B7B7;
-}
-
-#user2{
-background-color: #B12273;
-}
-
-#lucro2{
-background-color: #BF4289;
-}
-
-#user3{
-background-color: #84B259;
-}
-
-#lucro3{
-background-color: #84B259;
-}
-
-#user4{
-background-color: #BD3231;
-}
-
-#lucro4{
-background-color: #D85858;
-}
-
-#user5{
-background-color: #563E89;
-}
-
-#lucro5{
-background-color: #7661A4;
-}
-
-#user6{
-background-color: #DD962A;
-}
-
-#lucro6{
-background-color: #EFB152;
-}
-
 
 /*-----MEDIA QUERIES------------------------------------------------------*/
 
@@ -381,169 +371,34 @@ background-color: #EFB152;
 Pra dispositivos que tem uma largura mínima de 260 pixels.
 */
 @media screen and (max-width: 370px) {
-	.item {
-		margin-right: 3px;
-		width: 32%;
-	}
-	
-	.botao{
-		width: 19%;
-	}
-	
-	.btnDado{
-		margin-left: 0;
-		left: 4px;
-		width: 98%;
-	}
-	
-	.players {
-		position: relative;
-		left: 0%;
-	}
-	
-	section{
-		padding-left: 0;
-		padding-right: 0;
-	}
-	
-	.valorStyle {
-		width: 20%;
-	}
-	
-	#menu{	
-		margin: -7px -5% 15px -8px;
-	}
 }
 
 /*
 Pra dispositivos que tem uma largura mínima de 368 pixels.
 */
 @media screen and (min-width: 371px) {
-	
-	#involucro {
-		/*background-color: blue;*/
-	}
-  
-	.btnDado{
-		width: 94%;
-		left:0;
-	}
-	
-	.botao{
-		width: 19%;
-	}
-	
-	.players {
-		position: relative;
-		left: 0%;
-	}
-	
-	#menu{	
-		margin: -7px -5% 15px -8px;
-	}
 }
 
 /*
 Pra dispositivos que tem uma largura mínima de 500 pixels.
 */
 @media screen and (min-width: 500px) {
-	#involucro {
-		/*background-color: green;*/
-	}
-
-	.btnDado{
-		width: 76%;
-		left:10%;
-	}
-	
-	.valorStyle{
-		margin-left: 7%;
-	}
-	
-	.players {
-		position: relative;
-		left: 0%;
-	}
-	
-	#menu{	
-		margin: -7px -5% 15px -8px;
-	}
-	
 }
 
 /*
 Pra dispositivos que tem uma largura mínima de 768 pixels. Tablets, por exemplo.
 */
 @media screen and (min-width: 768px) {
-
-	#involucro {
-		/*background-color: yellow;*/
-	}
-
-	.btnDado{
-		width: 47%;
-		left:24%;
-	}
-	
-	#chart-area {
-		margin-left: 17%;
-		width: 64% !important;
-	}
-	
-	.players {
-		position: relative;
-		left: 0%;
-	}
-	
-	#menu{	
-		margin: -7px -7px 15px -8px;
-	}
  }
  
 /* 
  Com uma largura mínima de 992 pixels. Monitores por exemplo.
 */
 @media screen and (min-width: 992px) {
- 
- #involucro{ /*background-color: red;*/}
-
-
-	/*.btnDado{
-		width: 47%;
-		left:25%;
-	}*/
-	
-	.players {
-		position: relative;
-		left: 0%;
-	}
-	
-	#menu{
-		margin: -7px -7px 15px -8px;
-	}
-
  }
+ 
 /* 
  Dispositivos com largura mínima de 1200 pixels. Por exemplo TVs.
 */
 @media screen and (min-width: 1200px) {
-  #involucro{/*background-color: black;*/}
-  
-	#chart-area {
-		margin-left: 34%;
-		width: 30% !important;
-	}
-	
-	.players {
-		position: relative;
-		left: 14%;
-	}
-	
-	.botao{
-	width: 69px;
-	}
-	
-	#menu{
-		margin: -7px 40px 15px -8px;
-	}
 }

@@ -33,22 +33,21 @@ function onBolsa(){
 function onBanco(){	
 	document.getElementById("dado").innerHTML ='';
 	document.getElementById("banco").innerHTML =
-	'<div id="grafico" onClick="onBanco();"><canvas id="chart-area" width="300" height="300"/></div>' + 
-	'<div id="valores"> <div id="valor1" class="valorStyle">'+lucro1+'</div>'+
-	'<div id="valor2" class="valorStyle">'+lucro2+'</div>'+
-	'<div id="valor3" class="valorStyle">'+lucro3+'</div>'+
-	'<div id="valor4" class="valorStyle">'+lucro4+'</div>'+
-	'<div id="valor5" class="valorStyle">'+lucro5+'</div>'+
-	'<div id="valor6" class="valorStyle">'+lucro6+'</div>'+
+	'<div id="grafico" class="col-xs-12" onClick="onBanco();"><canvas id="chart-area" width="300" height="300"/></div>' + 
+	'<div id="valores" class="col-xs-12"> <div id="valor1" class="valorStyle col-xs-3">'+lucro1+'</div>'+
+	'<div id="valor2" class="valorStyle col-xs-3">'+lucro2+'</div>'+
+	'<div id="valor3" class="valorStyle col-xs-3">'+lucro3+'</div>'+
+	'<div id="valor4" class="valorStyle col-xs-3">'+lucro4+'</div>'+
+	'<div id="valor5" class="valorStyle col-xs-3">'+lucro5+'</div>'+
+	'<div id="valor6" class="valorStyle col-xs-3">'+lucro6+'</div>'+
 	'</div>'+
-	'<div id="scroll">V</div>'+
-	'<div id="scroll2">V</div>'+
-	'<div id="play1" class="players"></div>' +
-	'<div id="play2" class="players"></div>'+
-	'<div id="play3" class="players"></div>'+ 
-	'<div id="play4" class="players"></div>'+
-	'<div id="play5" class="players"></div>'+
-	'<div id="play6" class="players"></div></div>';
+	'<div id="scroll" class="col-xs-12 glyphicon glyphicon-menu-down"></div>'+
+	'<div id="play1" class="players col-xs-12"></div>' +
+	'<div id="play2" class="players col-xs-12"></div>'+
+	'<div id="play3" class="players col-xs-12"></div>'+ 
+	'<div id="play4" class="players col-xs-12"></div>'+
+	'<div id="play5" class="players col-xs-12"></div>'+
+	'<div id="play6" class="players col-xs-12"></div></div>';
 	
 	document.getElementById("banco").style.marginBottom = "-38px";
 	document.getElementById("bolsa").innerHTML ='';
@@ -60,40 +59,40 @@ function onBanco(){
 	mostrarContas();
 	
 	var pieData = [
-				{
+				{//Blue
 					value: lucro1,
-					color:"#00A9B9",
-					highlight: "#00A9B9",
+					color:"#18B5BE",
+					highlight: "#18B5BE",
 					label: "Atualizar"
 				},
-				{
+				{//Pink
 					value: lucro2,
-					color: "#B12273",
-					highlight: "#B12273",
+					color: "#C63F84",
+					highlight: "#C63F84",
 					label: "Atualizar"
 				},
-				{
+				{//Green
 					value: lucro3,
-					color: "#84B259",
-					highlight: "#84B259",
+					color: "#27B647",
+					highlight: "#27B647",
 					label: "Atualizar"
 				},
-				{
+				{//Red
 					value: lucro4,
-					color: "#BD3231",
-					highlight: "#BD3231",
+					color: "#F13136",
+					highlight: "#F13136",
 					label: "Atualizar"
 				},
-				{
+				{//Purple
 					value: lucro5,
-					color: "#563E89",
-					highlight: "#563E89",
+					color: "#7C57E4",
+					highlight: "#7C57E4",
 					label: "Atualizar"
 				},
-				{
+				{//Orange
 					value: lucro6,
-					color: "#DD962A",
-					highlight: "#DD962A",
+					color: "#F1B136",
+					highlight: "#F1B136",
 					label: "Atualizar"
 				}
 
@@ -254,9 +253,9 @@ lucro6=10;
 
 	function playBox(play,lucro,n,nome){
 	document.getElementById(play).innerHTML =  
-	'<button class="botao" onClick="subtrairLucro'+n+'()"' +';'+ '">-</button>'+''
-	+'<div id="lucro'+n+'" class="user playLucro">'+ '<p>'+nome+ '</p>'+'<p>'+'$' +lucro + '</p>' +'</div>'
-	+'<button class="botao" onClick="adicionarLucro'+n+'()"'+';'+'">+</button>';	
+	'<button class="botao col-xs-2 btn-red glyphicon glyphicon-minus" onClick="subtrairLucro'+n+'()"' +';'+ '"></button>'+''
+	+'<div id="lucro'+n+'" class="user playLucro col-xs-8">'+ '<p>'+nome+ '</p>'+'<p>'+'$' +lucro + '</p>' +'</div>'
+	+'<button class="botao col-xs-2 btn-green glyphicon glyphicon-plus" onClick="adicionarLucro'+n+'()"'+';'+'"></button>';	
 	}
 
 	function clearPlayBox(player){

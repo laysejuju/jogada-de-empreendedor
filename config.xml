@@ -12,8 +12,8 @@
         Aplicativo do card game Jodada de Empreendedor.
     </description>
 
-    <author href="" email="laysejuju@gmail.com">
-       Layse Julyanne, Ângela Oliveira e Cleber Morais
+    <author href="" email="ola@laysejulyanne.com.br">
+       Layse Julyanne e Ângela Oliveira
     </author>
 
     <!--
@@ -39,7 +39,7 @@
     <preference name="android-installLocation"    value="auto" />           <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
 	<preference name="phonegap-version"           value="cli-5.2.0" />			<!-- Define a specific version of PhoneGap to build into your app. -->
 	<preference name="SplashScreen" value="splash" />
-	
+
     <!-- Plugins -->
 
     <!-- Core plugins -->
